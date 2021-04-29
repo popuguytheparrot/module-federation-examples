@@ -47,7 +47,7 @@ While sharing is one issue, the consuming a remote with the native `import` synt
 
 > I did note, that i can get rid of emitting a secondary entry chunk if module federation uses name. webpack-runtime-next1 and i also change the runtimeChunk `name` to be the same. But this did not resolve my issues client or server
 
-Inside `next2/pages/index.js` youll see i am using a hack workaround
+Inside `next2/pages/index.ts` youll see i am using a hack workaround
 
 ```js
 const RemoteTitle = dynamic(
@@ -92,7 +92,7 @@ Useful files in the SSR build.
 
 - https://github.com/module-federation/module-federation-examples/blob/master/server-side-rendering/website1/build/webpack.config.js/server.base.js
 - https://github.com/module-federation/module-federation-examples/blob/master/server-side-rendering/website1/build/webpack.config.js/client.base.js
-- Entrypoint - https://github.com/module-federation/module-federation-examples/blob/master/server-side-rendering/website1/server/index.js
+- Entrypoint - https://github.com/module-federation/module-federation-examples/blob/master/server-side-rendering/website1/server/index.ts
 - Async import middleware - https://github.com/module-federation/module-federation-examples/blob/master/server-side-rendering/website1/server/server-entry.js
 
 The async import middleware is where i keep the async boundary, this is also the only point of reference where React is import into scope.

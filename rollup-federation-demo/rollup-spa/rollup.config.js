@@ -7,7 +7,7 @@ import federation from "@module-federation/rollup-federation";
 import pkg from "./package.json";
 
 export default {
-  input: "src/index.js",
+  input: "src/index.ts",
   preserveEntrySignatures: false,
   plugins: [
     injectProcessEnv({

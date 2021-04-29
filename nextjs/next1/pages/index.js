@@ -17,7 +17,7 @@ const Home = () => (
         Welcome to Next.js on Webpack 5! <code>next1</code>
       </h1>
       <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
+        To get started, edit <code>pages/index.ts</code> and save to reload.
       </p>
 
       <div className="row">

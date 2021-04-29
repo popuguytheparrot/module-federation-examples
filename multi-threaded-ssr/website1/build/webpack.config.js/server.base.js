@@ -20,7 +20,7 @@ const remotes = {
 module.exports = merge(common, {
   name: "server",
   target: "async-node",
-  entry: ["@babel/polyfill", path.resolve(__dirname, "../../server/index.js")],
+  entry: ["@babel/polyfill", path.resolve(__dirname, "../../server/index.ts")],
   output: {
     path: serverPath,
     filename: "[name].js",
