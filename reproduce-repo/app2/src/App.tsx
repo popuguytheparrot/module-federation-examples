@@ -2,7 +2,7 @@ import * as React from "react";
 
 
 // @ts-ignore
-const useUserLogin = await import("CorpCRM/userUserLogin")
+const useUserLogin = await import("CorpCRM/useUserLogin")
 
 
 console.log(useUserLogin)
